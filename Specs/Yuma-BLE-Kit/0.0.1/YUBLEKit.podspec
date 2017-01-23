@@ -18,13 +18,12 @@ Pod::Spec.new do |s|
   s.default_subspec = 'YUBLECommunication'
 
   s.subspec 'YUBLECommunication' do |ybkc|
-    ybkc.source_files = 'Yuma-BLE-Kit/Yuma-BLE-Kit/**/*.{h,m}'
-    ybkc.dependency 'CocoaLumberjack', '~> 2.3.0'
+    ybkc.source_files = 'Yuma-BLE-Kit/YumaBLEKit/**/*.{h,m}'
     ybkc.dependency 'ReactiveCocoa', '~> 2.5'
   end
 
   s.subspec 'YUBLEPayment' do |ybkp|
-    ybkp.source_files = 'Yuma-BLE-Kit/Yuma-BLE-Kit/Payment/**/*.{h,m}'
+    ybkp.source_files = 'Yuma-BLE-Kit/YumaBLEKit/Payment/**/*.{h,m}'
     ybkp.dependency 'YUBLEKit/YUBLECommunication', '~> 0.0.1'
   end
 
