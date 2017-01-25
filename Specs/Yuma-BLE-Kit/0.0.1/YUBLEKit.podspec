@@ -12,8 +12,8 @@ Pod::Spec.new do |s|
   s.author           = { "Yumasoft" => "yumasoftdev@gmail.com" }
   s.source           = { :git => "https://github.com/yumapos/Yuma-BLE-Kit-iOS.git", :tag => s.version.to_s }
 
-  s.platform     = :ios, '9.3'
-  s.ios.deployment_target = '8.4'
+  s.platform     = :ios, '10.2'
+  s.ios.deployment_target = '8.0'
   s.requires_arc = true
   s.default_subspec = 'YUBLECommunication'
 
