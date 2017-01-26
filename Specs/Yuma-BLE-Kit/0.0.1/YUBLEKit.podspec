@@ -19,7 +19,9 @@ Pod::Spec.new do |s|
 
   s.subspec 'YUBLECommunication' do |ybkc|
     ybkc.source_files = 'Yuma-BLE-Kit/YumaBLEKit/**/*.{h,m}'
-    ybkc.dependency 'ReactiveCocoa', '~> 2.5'
+    ybkc.dependency 'CocoaLumberjack', '~> 2.3.0'
+    ybkc.dependency 'KVOController', '~> 1.2.0'
+    ybkc.dependency 'libextobjc', '~> 0.4.1'
   end
 
   s.subspec 'YUBLEPayment' do |ybkp|
