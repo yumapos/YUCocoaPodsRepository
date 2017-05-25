@@ -1,5 +1,5 @@
 Pod::Spec.new do |s|
-  s.name             = "YUBLEKit"
+  s.name             = "Yuma-BLE-Kit"
   s.version          = "0.0.1"
   s.summary          = "Reliable communication over BLE"
   s.description      = <<-DESC
@@ -26,7 +26,7 @@ Pod::Spec.new do |s|
 
   s.subspec 'YUBLEPayment' do |ybkp|
     ybkp.source_files = 'Yuma-BLE-Kit/YumaBLEKit/Payment/**/*.{h,m}'
-    ybkp.dependency 'YUBLEKit/YUBLECommunication', '~> 0.0.1'
+    ybkp.dependency 'Yuma-BLE-Kit/YUBLECommunication', '~> 0.0.1'
   end
 
 end
